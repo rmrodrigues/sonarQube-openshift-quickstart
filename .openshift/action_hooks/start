@@ -3,7 +3,6 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_DIY_IP:8080
 #nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_DIY_IP $OPENSHIFT_REPO_DIR/diy > $OPENSHIFT_DIY_DIR/logs/server.log 2>&1 &
-sleep 3m
 cd $OPENSHIFT_REPO_DIR/sonarqube-4.0/bin/linux-x86-32
 chmod 755 wrapper
 sh ./sonar.sh start
